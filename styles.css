@@ -1,2 +1,119 @@
 
 /* Your CSS Code here. */
+.player {
+  max-width: 750px;
+  margin: 50px auto;
+  background: #f8f8f8;
+  border: 10px solid #ededed;
+}
+
+.player__controls {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(0,0,0,0.1);
+}
+
+.progress {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-basis: 100%;
+  height: 15px;
+  cursor: ew-resize;
+  background: #eee;
+  overflow: hidden;
+}
+
+.progress__filled {
+  width: 50%;
+  background: #ffc600;
+  flex: 1;
+}
+
+.player__button {
+  background: none;
+  border: 0;
+  line-height: 1;
+  color: white;
+  background: black;
+  flex: 0 0 auto;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.player__button:focus {
+  outline: 0;
+}
+
+.player__slider {
+  width: 100px;
+  height: 30px;
+}
+
+.viewer {
+  width: 100%;
+}
+
+/* Hides the default slider appearance */
+input[type="range"] {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #ddd;
+  border-radius: 1.3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #ffc600;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.5px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: #ddd;
+  border-radius: 2.6px;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 2.6px;
+}
+
+input[type="range"]::-ms-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #ffc600;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+.player__slider::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+}
+
+.player__slider:focus {
+  outline: none;
+}
